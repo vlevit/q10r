@@ -32,7 +32,7 @@ Site root provides a list of existing questionnaires with links to
 forms and results.
 
 Look at `questionnaires/texteditor.json` for a questionnaire example.
-Each questionnaire is a dict which may contain the following fields:
+Each questionnaire is an object with the following keys:
 
     extends
     title
