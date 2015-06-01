@@ -5,6 +5,13 @@ from JSON files and stores submissions in JSON files under different
 directory. q10r also provides a page for viewing questionnaire
 results.
 
+## Demo
+
+http://vlevit.org/q10r/ <-- list of questionnaires  
+http://vlevit.org/q10r/texteditor <-- questionnaire "texteditor"  
+http://vlevit.org/q10r/texteditor/results <-- results for
+questionnaire "texteditor"
+
 ## Installation
 
 q10r is a Flask blueprint. To install dependencies run
