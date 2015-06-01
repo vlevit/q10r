@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Questionnaire List{% endblock title %}
+
+{% block content %}
+  <h1>List of Questionnaires</h1>
+  <ul class="questionnaire-list">
+  {% for slug, data in questionnaires %}
+    <li>
+      <a href="{{ url_for('q10r.results', slug=slug) }}">{{ data.title }}</a>
+      <ul class="form"><li>
+          <a href="{{ url_for('q10r.questionnaire', slug=slug) }}">Form</a>
+      </li></ul>
+    </li>
+  {% else %}
+    <li>There is no questionnaire yet.</li>
+  {% endfor %}
+  </ul>
+{% endblock content %}

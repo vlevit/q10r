@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title -%}
+  Results
+{%- endblock title %}
+
+{% block content_class -%}
+  wide
+{%- endblock content_class %}
+
+{% block content %}
+  <h1>Results for <em>{{ questionnaire.title }}</em></h1>
+  {% if submissions %}
+    <table class="results">
+
+      <thead>
+        {% for q in questionnaire.questions %}
+          <th>{{ q.label }}</th>
+        {% endfor %}
+        <th>
+          Submission date
+        </th>
+      </thead>
+
+      {% for d, s in submissions.iteritems() | sort %}
+        <tr>
+          {% for q in questionnaire.questions %}
+            <td>
+              {% if loop.index0 in s %}
+                {% set items = s[loop.index0] %}
+                {% for value, other in items %} 
+                  {{ value }}
+                  {%- if other %}
+                    ({{ other }})
+                  {%- endif -%}
+                  {%- if not loop.last -%}
+                    ,
+                  {%- endif -%}
+                {%- endfor %}
+              {% endif %}
+            </td>
+          {% endfor %}
+          <td>{{ d.strftime('%c') }}</td>
+        </tr>
+      {% endfor %}
+    {% else %}
+      The questionnaire doesn't have any submission yet.
+    {% endif %}
+  </table>
+{% endblock content %}

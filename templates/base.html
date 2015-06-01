@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/normalize.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/base.css') }}" type="text/css">
+    <title>
+      {% block title %}{% endblock title %} — Questionnaire
+    </title>
+  </head>
+  <body>
+    <div class="content {% block content_class %}{% endblock content_class %}">
+      {% block content %}{% endblock content %}
+    </div>
+  </body>
+</html>
