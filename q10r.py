@@ -1,10 +1,11 @@
 from collections import defaultdict
 from copy import deepcopy
 from datetime import datetime
+from functools import wraps
 import json
 import os
 
-from flask import abort, Blueprint, render_template, request
+from flask import abort, Blueprint, render_template, request, Response
 from flask import current_app as app
 
 
@@ -123,7 +124,36 @@ def _write_submission(data, slug):
         json.dump(data, f, indent=4)
 
 
+# HTTP Basic Auth
+# http://flask.pocoo.org/snippets/8/
+
+def check_auth(username, password):
+    """This function is called to check if a username /
+    password combination is valid.
+    """
+    return _get_option('BASIC_AUTH') == (username, password)
+
+
+def authenticate():
+    """Sends a 401 response that enables basic auth"""
+    return Response(
+    'Could not verify your access level for that URL.\n'
+    'You have to login with proper credentials', 401,
+    {'WWW-Authenticate': 'Basic realm="Login Required"'})
+
+
+def requires_auth(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        auth = request.authorization
+        if not auth or not check_auth(auth.username, auth.password):
+            return authenticate()
+        return f(*args, **kwargs)
+    return decorated
+
+
 @q10r.route('/')
+@requires_auth
 def index():
     dir_ = _get_option('DIR')
     qs = map(lambda s: (s[:-5], _get_questionnaire_data(s[:-5])),
@@ -195,6 +225,7 @@ def questionnaire(slug):
 
 
 @q10r.route('/<slug>/results', methods=['GET'])
+@requires_auth
 def results(slug):
     data = _get_questionnaire_data(slug)
     submissions = _get_submissions(slug)

@@ -7,9 +7,9 @@ results.
 
 ## Demo
 
-http://vlevit.org/q10r/ <-- list of questionnaires  
+http://demo:demo@vlevit.org/q10r/ <-- list of questionnaires  
 http://vlevit.org/q10r/texteditor <-- questionnaire "texteditor"  
-http://vlevit.org/q10r/texteditor/results <-- results for
+http://demo:demo@vlevit.org/q10r/texteditor/results <-- results for
 questionnaire "texteditor"
 
 ## Installation
@@ -23,6 +23,8 @@ Then create a new application (or embed to the existing one). See
 `example_config.py`. It must contain `QUESTIONNAIRE_DIR` which must
 point to a directory with questionnaire files and
 `QUESTIONNAIRE_SUBMISSIONS_DIR` where submissions will be written.
+Don't forget to udpate `QUESTIONNAIRE_BASIC_AUTH` tuple. It is used
+for authentication to the questionnaire list and results pages.
 
 ## Usage
 
