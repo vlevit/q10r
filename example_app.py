@@ -1,5 +1,3 @@
-import logging
-
 from flask import Flask
 
 from q10r import q10r
