@@ -7,9 +7,9 @@ results.
 
 ## Demo
 
-http://demo:demo@vlevit.org/q10r/ <-- list of questionnaires  
-http://vlevit.org/q10r/texteditor <-- questionnaire "texteditor"  
-http://demo:demo@vlevit.org/q10r/texteditor/results <-- results for
+<http://demo:demo@vlevit.org/q10r/> <-- list of questionnaires  
+<http://vlevit.org/q10r/texteditor> <-- questionnaire "texteditor"  
+<http://demo:demo@vlevit.org/q10r/texteditor/results> <-- results for
 questionnaire "texteditor"
 
 ## Installation
