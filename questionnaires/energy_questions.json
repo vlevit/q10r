@@ -28,5 +28,25 @@
                 "Integrate carbon capture and storage",
             ]
         },
+                 {
+            "type": "checkbox",
+            "label": "Which fuel would you choose (for your petrol engine car) if more alternative fuels were available at fuel stations",
+            "required": true,
+            "options": [
+                "hydrogen)",
+                "biobutanol)",
+                "ethanol",
+            ]
+        },
+                {
+            "type": "checkbox",
+            "label": "Which fuel would you choose (for your diesel engine car) if more alternative fuels were available at fuel stations",
+            "required": true,
+            "options": [
+                "still regular diesel)",
+                "biodiesel)",
+                "dimethylether",
+            ]
+        },
     ]
 }
