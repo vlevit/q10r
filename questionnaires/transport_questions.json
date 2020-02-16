@@ -1,6 +1,6 @@
 
 {
-    "title": "Text Editor Survey",
+    "title": "Transport questions",
     "questions": [
         {
             "type": "string",
@@ -9,31 +9,17 @@
         },
         {
             "type": "checkbox",
-            "label": "What text editors do you use?",
-            "help": "For programming and other purposes.",
+            "label": "How would you like to see traffic congestion be solved ?",
             "required": true,
             "options": [
-                "Ed",
-                "Vi",
-                "Emacs",
-                "+Other"
+                "construct more highways and/or widen them",
+                "make cities car-free",
+                "make 2-way roads in city centers 1-way",
+                "construct more bicycle lanes and reduce width of roads in city centers",
+                "ban non-autonomous cars to speed traffic up and reduce accidents",
+                "tax cars more thus benefitting alternative modes of transport",
+                "none of the above"
             ]
         },
-        {
-            "type": "radio",
-            "label": "What text editor do you prefer?",
-            "required": true,
-            "options": [
-                "Ed",
-                "Vi",
-                "Emacs",
-                "+Other"
-            ]
-        },
-        {
-            "type": "text",
-            "label": "Why not cat(1)?",
-            "help": "Please, explain in one paragraph."
-        }
     ]
 }
