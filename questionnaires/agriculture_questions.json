@@ -1,0 +1,20 @@
+{
+    "title": "Agriculture questions",
+    "questions": [
+        {
+            "type": "string",
+            "label": "Your Name",
+            "required": true
+        },
+                {
+            "type": "checkbox",
+            "label": "How should we solve the emissions attributed to meat consumption ?",
+            "required": true,
+            "options": [
+                "Ban the sale of meat from cattle and pigs",
+                "Implement a meat tax",
+                "Just have meat be made costly due to a carbon tax (costs on methane emissions from meat)",      
+            ]
+        },
+    ]
+}
