@@ -23,7 +23,7 @@
             "label": "What would you like to see happen with the existing thermal power stations (on gas) ?",
             "required": true,
             "options": [
-                "Keep as is)",
+                "Keep as is",
                 "Keep as is (but offset greenhouse gas emissions through other means like carbon sequestration instead)",
                 "Integrate carbon capture and storage",
             ]
@@ -33,8 +33,10 @@
             "label": "Which fuel would you choose (for your petrol engine car) if more alternative fuels were available at fuel stations",
             "required": true,
             "options": [
-                "hydrogen)",
-                "biobutanol)",
+                "still gasoline or LPG",
+                "CNG",
+                "hydrogen",
+                "biobutanol",
                 "ethanol",
             ]
         },
@@ -43,8 +45,9 @@
             "label": "Which fuel would you choose (for your diesel engine car) if more alternative fuels were available at fuel stations",
             "required": true,
             "options": [
-                "still regular diesel)",
-                "biodiesel)",
+                "still regular diesel",
+                "biodiesel (B100)",
+                "straight vegetable oil",
                 "dimethylether",
             ]
         },
