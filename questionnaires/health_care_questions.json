@@ -9,7 +9,7 @@
         },
                 {
             "type": "checkbox",
-            "label": "Should smoking products be banned (thus allowing only smoke-free products) ?",
+            "label": "Should smoking products be banned (thus allowing only smoke-free products -like vaping products, heat-not-burn products, and other nicotine-based products-) ?",
             "required": true,
             "options": [
                 "yes",
