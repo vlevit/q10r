@@ -1,0 +1,20 @@
+
+{
+    "title": "Health care questions",
+    "questions": [
+        {
+            "type": "string",
+            "label": "Your Name",
+            "required": true
+        },
+                {
+            "type": "checkbox",
+            "label": "Should smoking products be banned (thus allowing only smoke-free products) ?",
+            "required": true,
+            "options": [
+                "yes",
+                "no",
+            ]
+        },
+    ]
+}
