@@ -1,5 +1,5 @@
 {
-    "title": "Text Editor Survey",
+    "title": "Environment questions",
     "questions": [
         {
             "type": "string",
@@ -8,31 +8,12 @@
         },
         {
             "type": "checkbox",
-            "label": "What text editors do you use?",
-            "help": "For programming and other purposes.",
+            "label": "Should we ban all non-biodegradable food packaging",
             "required": true,
             "options": [
-                "Ed",
-                "Vi",
-                "Emacs",
-                "+Other"
+                "yes",
+                "no",
             ]
         },
-        {
-            "type": "radio",
-            "label": "What text editor do you prefer?",
-            "required": true,
-            "options": [
-                "Ed",
-                "Vi",
-                "Emacs",
-                "+Other"
-            ]
-        },
-        {
-            "type": "text",
-            "label": "Why not cat(1)?",
-            "help": "Please, explain in one paragraph."
-        }
     ]
 }
