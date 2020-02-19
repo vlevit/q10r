@@ -16,5 +16,14 @@
                 "no",
             ]
         },
+        {
+            "type": "checkbox",
+            "label": "Should we compensate all CO2 emissions from each carbon-intensive good/service through this carbon tax (thus effectively becoming carbon-neutral) ?",
+            "required": true,
+            "options": [
+                "yes",
+                "no",
+            ]
+        },
     ]
 }
