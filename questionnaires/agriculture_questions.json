@@ -16,5 +16,15 @@
                 "Just have meat be made costly due to a carbon tax (costs on methane emissions from meat)",      
             ]
         },
+                {
+            "type": "checkbox",
+            "label": "Should we ban pesticides (thus effectively making all plant-based agriculture organic) ?",
+            "required": true,
+            "options": [
+                "yes",
+                "no",      
+            ]
+        },
+        
     ]
 }
