@@ -8,7 +8,16 @@
         },
         {
             "type": "checkbox",
-            "label": "Should we ban all non-biodegradable food packaging",
+            "label": "Should we ban all non-biodegradable food packaging ?",
+            "required": true,
+            "options": [
+                "yes",
+                "no",
+            ]
+        },
+        {
+            "type": "checkbox",
+            "label": "Should each country participate in the trillion tree campaign in the same degree as its share in global CO2 emissions ?",
             "required": true,
             "options": [
                 "yes",
