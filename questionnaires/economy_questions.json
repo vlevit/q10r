@@ -25,5 +25,15 @@
                 "no",
             ]
         },
+        {
+            "type": "checkbox",
+            "label": "Should we address the global human overpopulation using human population planning, thus reducing strain on the environment and increasing our own quality of life and wealth ? If so, how should we do it ?",
+            "required": true,
+            "options": [
+                "yes, by family planning education and through various taxes and subsidies that promote having 2 children or less",
+                "yes, by family planning education and through various taxes and subsidies that promote having 1 child or less",
+                "no",
+            ]
+        },
     ]
 }
